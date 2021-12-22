@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&family=IM+Fell+DW+Pica&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src=../JS/funciones.js></script>
+    <title>Newsletter | Taylor Swift Fan Page</title>
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/newsletter.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="discografia.html">Discografía</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="newsletter.html">Newsletter</a>
+    </div>
+    <main>
+        <header>
+            <img src="../Imagenes/Base/header.png">
+        </header>
+        <h1>Newsletter </h1>
+        <p>
+            Si querés recibir información exclusiva sobre Taylor Swift no te olvides de suscribirte a nuestro
+            newsletter. De esta manera, recibirás por mail las últimas novedades de la artista.
+            Además, podrás acceder a material audivisual inédito. ¡También podrás participar de nuestros sorteos
+            mensuales!
+        </p>
+        <br>
+        <form id="formulario" onsubmit="return validacion();">
+            <p>Nombre y Apellido: 
+                <br>
+                <input type="text" name="nombre" maxlength="50" required><label id="msjNombre"></label></p>
+            <p>Mail: 
+                <br>
+                <input type="text" name="correo" required><label id="msjCorreo"></label></p>
+            <p>Fecha de nacimiento: 
+                <br>
+                <input type="date" id="fecha" name="fecha" required><label id="msjFecha"></label></p> 
+            <p>País: 
+                <br>
+                <select name="menu">
+                    <option value=""> - Selecciona un pais - </option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Bolivia</option>
+                    <option value="3">Chile</option>
+                    <option value="4">Colombia</option>
+                    <option value="5">España</option>
+                    <option value="6">Mexico</option>
+                    <option value="7">Paraguay</option>
+                    <option value="8">Uruguay</option>
+                    <option value="9">Venezuela</option>
+                    <option value="10">Otro</option>
+                </select><label id="msjPais"></label></p>
+                <input type="submit" value="Enviar">
+        </form>
+
+        <div id="modalNewsletter" class="modal">
+           <div class="estiloModal">
+              <p>¡Tus datos han sido enviados correctamente!</p>
+              <img src="../Imagenes/Base/gifNewsletter.gif">
+            </div>
+        </div>
+  
+        <script> maximaFecha(); </script>
+
+    </main>
+    <footer>
+        <p><i>¡No te olvides de seguir a Taylor en sus redes sociales!</p></i>
+        <a href="https://www.youtube.com/taylorswift" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/taylorswift13" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/TaylorSwift" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/taylorswift/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><i class="fab fa-snapchat"></i></a>
+        <a href="https://www.tiktok.com/@taylorswift?" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </footer>
+</body>
+
+</html>
